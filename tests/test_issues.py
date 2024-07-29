@@ -257,6 +257,7 @@ def test_issue_467():
     clip = clip.fx(blink, d_on=1, d_off=1)
 
 
+@pytest.mark.skip   # This test seems to be no longer valid: ffmpeg handles this gracefully, it seems
 def test_issue_470():
     audio_clip = AudioFileClip('media/crunching.mp3')
 

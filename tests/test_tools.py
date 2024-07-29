@@ -59,7 +59,7 @@ def test_sys_write_flush():
     tools.sys_write_flush("hello world")
 
     file = sys.stdout.read()
-    assert file == b""
+    assert file == ""
 
 
 if __name__ == '__main__':

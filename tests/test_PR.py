@@ -64,7 +64,7 @@ def test_PR_424():
         ColorClip([1000, 600], col=(60, 60, 60), duration=10).close()
 
     # Catch all warnings as record.
-    with pytest.warns(None) as record:
+    with pytest.warns(Warning) as record:
         # Should give 2 warnings and use `color`, not `col`
         ColorClip([1000, 600], color=(60, 60, 60), duration=10, col=(2,2,2)).close()
 

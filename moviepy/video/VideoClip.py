@@ -129,8 +129,8 @@ class VideoClip(Clip):
         imsave(filename, im)
 
     @requires_duration
-    @use_clip_fps_by_default
     @convert_masks_to_RGB
+    @use_clip_fps_by_default
     def write_videofile(self, filename, fps=None, codec=None,
                         bitrate=None, audio=True, audio_fps=44100,
                         preset="medium",
@@ -312,8 +312,8 @@ class VideoClip(Clip):
         logger(message="Moviepy - video ready %s" % filename)
 
     @requires_duration
-    @use_clip_fps_by_default
     @convert_masks_to_RGB
+    @use_clip_fps_by_default
     def write_images_sequence(self, nameformat, fps=None, verbose=True,
                               withmask=True, logger='bar'):
         """ Writes the videoclip to a sequence of image files.

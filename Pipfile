@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 moviepy = {editable = true, path = "."}
+setuptools = "<72"
 
 [dev-packages]
 pytest = "*"
